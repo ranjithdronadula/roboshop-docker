@@ -56,7 +56,7 @@ services:
   #   volumes:
   #   - rabbitmq:/var/lib/rabbitmq
   payment:
-    image: joindevops/payment:v1
+    image: ranjithops/payment:v1
     container_name: payment
     environment:
       CART_HOST: cart
@@ -71,7 +71,7 @@ services:
     - cart
     - user
   frontend:
-    image: joindevops/frontend:v1
+    image: ranjithops/frontend:v1
     container_name: frontend
     ports:
     - "80:80"
